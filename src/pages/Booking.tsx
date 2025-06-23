@@ -9,8 +9,6 @@ import {
   Paper,
   Grid,
   Divider,
-  useTheme,
-  useMediaQuery,
   Card,
   CardMedia
 } from '@mui/material';
@@ -29,9 +27,6 @@ const vehicles = [
 ];
 
 const Booking = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-
   const [formData, setFormData] = useState({
     fullName: '',
     contactNumber: '',

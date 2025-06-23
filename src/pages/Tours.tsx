@@ -106,8 +106,15 @@ const Tours = () => {
     { place: 'Nadankan Zoo Park', price: '700/-' },
     { place: 'Night 10pm to 5am Trip', price: '200/-' },
 ];
-  
-  const PricingTable = ({ title, headers, data, dataKeys }) => (
+
+  interface PricingTableProps {
+    title: string;
+    headers: string[];
+    data: Record<string, string>[];
+    dataKeys: string[];
+  }
+
+  const PricingTable = ({ title, headers, data, dataKeys }: PricingTableProps) => (
     <TableContainer component={Paper} sx={{ mb: 6 }}>
       <Typography variant="h5" component="h3" sx={{ p: 2, bgcolor: 'primary.main', color: 'white' }}>
         {title}
@@ -115,13 +122,13 @@ const Tours = () => {
       <Table>
         <TableHead>
           <TableRow>
-            {headers.map((header, index) => <TableCell key={index} sx={{ fontWeight: 'bold' }}>{header}</TableCell>)}
+            {headers.map((header: string, index: number) => <TableCell key={index} sx={{ fontWeight: 'bold' }}>{header}</TableCell>)}
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((row, rowIndex) => (
+          {data.map((row: Record<string, string>, rowIndex: number) => (
             <TableRow key={rowIndex}>
-              {dataKeys.map((key, keyIndex) => <TableCell key={keyIndex}>{row[key]}</TableCell>)}
+              {dataKeys.map((key: string, keyIndex: number) => <TableCell key={keyIndex}>{row[key]}</TableCell>)}
             </TableRow>
           ))}
         </TableBody>

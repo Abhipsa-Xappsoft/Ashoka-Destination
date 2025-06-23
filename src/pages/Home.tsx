@@ -1,11 +1,9 @@
 import { Box, Container, Typography, Button, Grid, Paper } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import {
-  Phone as PhoneIcon,
   DirectionsCar as CarIcon,
   FlightTakeoff as FlightIcon,
   PhoneAndroid as MobileIcon,
-  CalendarMonth as CalendarIcon,
   PersonAdd as DriverIcon,
   People as PeopleIcon,
   DirectionsCarFilled as CarFilledIcon,
