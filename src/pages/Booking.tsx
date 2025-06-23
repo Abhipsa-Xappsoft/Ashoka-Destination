@@ -49,10 +49,9 @@ const Booking = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // These values are placeholders. You will need to replace them with your actual EmailJS credentials.
     const serviceID = 'service_1prau5o';
     const templateID = 'template_c6yrumg';
-    const userID = 'N68gY2ZH8arbGQS2p1ymN';
+    const userID = 'DOaxrxbmlGcH7_wKm';
 
     const templateParams = {
       ...formData,
