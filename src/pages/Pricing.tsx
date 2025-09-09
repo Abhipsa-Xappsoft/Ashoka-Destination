@@ -16,7 +16,7 @@ const vehicleMapping: Record<string, string> = {
 
 const oneWayPrices = [
   { from: 'Bhubaneswar Railway Station & Airport', to: 'Puri (One Side Pick-up & Drop)', prices: [
-    { vehicle: 'Swift Dzire 4 sitter', amount: '1350/-' },
+    { vehicle: 'Swift Dzire 4 Sitter', amount: '1350/-' },
     { vehicle: 'Ertiga 7 sitter', amount: '1600/-' },
     { vehicle: 'Innova 7 sitter', amount: '1700/-' },
     { vehicle: 'Crysta 7 sitter', amount: '2200/-' },
