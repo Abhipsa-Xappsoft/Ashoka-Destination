@@ -152,9 +152,10 @@ const Contact = () => {
                     <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
                       Email
                     </Typography>
+                   
                     <Typography variant="body1" sx={{ mt: 0.5 }}>
                       <a 
-                        href="mailto:info@jayjagannathtravels.com" 
+                        href="mailto:jayjagannathtravels82@gmail.com" 
                         style={{ 
                           color: 'inherit', 
                           textDecoration: 'none'
@@ -162,20 +163,7 @@ const Contact = () => {
                         onMouseOver={(e) => e.currentTarget.style.textDecoration = 'underline'}
                         onMouseOut={(e) => e.currentTarget.style.textDecoration = 'none'}
                       >
-                        info@jayjagannathtravels.com
-                      </a>
-                    </Typography>
-                    <Typography variant="body1" sx={{ mt: 0.5 }}>
-                      <a 
-                        href="mailto:ashok.sabut@jayjagannathtravels.com" 
-                        style={{ 
-                          color: 'inherit', 
-                          textDecoration: 'none'
-                        }}
-                        onMouseOver={(e) => e.currentTarget.style.textDecoration = 'underline'}
-                        onMouseOut={(e) => e.currentTarget.style.textDecoration = 'none'}
-                      >
-                        ashok.sabut@jayjagannathtravels.com
+                        jayjagannathtravels82@gmail.com
                       </a>
                     </Typography>
                   </Box>
